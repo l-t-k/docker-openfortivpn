@@ -1,7 +1,8 @@
 # docker-openfortivpn
 ```
 docker run -d --name vpn \
-	--privileged \
+	--device=/dev/ppp \
+	--cap-add=NET_ADMIN \
 	-p "3390:3390" \
 	-e 'VPN_RDPIP=ip' \
 	-e 'VPN_HOST=host' \
