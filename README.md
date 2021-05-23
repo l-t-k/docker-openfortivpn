@@ -10,5 +10,5 @@ docker run -d --name vpn \
 	-e 'VPN_USER=user' \
 	-e 'VPN_PASS=pass' \
 	-e 'VPN_OTP=otp' \
-	docker-openfortivpn
+	ltka/openfortivpn
 ```
